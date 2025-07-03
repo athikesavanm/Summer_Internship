@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to  left, #d62828, hsl(276, 81%, 71%));
+  color: #333;
+}
+
+.main {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  background: linear-gradient(to right, #f8cdda, #4e3c0e);
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.player {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.player--active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 60px;
+  color: #e63946;
+}
+
+.current {
+  margin-top: 40px;
+  background-color: #e63946;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.current-label {
+  font-size: 14px;
+}
+
+.current-score {
+  font-size: 32px;
+}
+
+.dice {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn--new {
+  top: 30px;
+}
+
+.btn--roll {
+  top: 230px;
+}
+
+.btn--hold {
+  top: 290px;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+.player--winner {
+  background: #80ed99;
+}
